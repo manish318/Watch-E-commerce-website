@@ -1,4 +1,4 @@
-Create proc Proc_Login
+Create proc Proc_Admin_Login
 (
 	@flag			Varchar(30),
 	@user			Varchar(30),
@@ -11,7 +11,7 @@ AS
 IF @flag='DoLogin'
 BEGIN
 	--success
-	IF EXISTS(SELECT 'x' FROM Admin_M WHERE userName=@user and pwd=@pwd)
+	IF EXISTS(SELECT 'x' FROM Admin_Master WHERE userName=@user and pwd=@pwd)
 	BEGIN
 		SELECT '0' as code, 'Login Success' as msg
 	RETURN
@@ -21,6 +21,6 @@ BEGIN
 RETURN
 END
 
-EXEC Proc_Login @flag='DoLogin'
+EXEC Proc_Admin_Login @flag='DoLogin', @user='admin',@pwd='admin'
 
 

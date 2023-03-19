@@ -54,7 +54,7 @@ namespace EShop.LoginPage
             }
             else
             {
-                string sql = "EXEC Proc_Client @flag='InsertData'";
+                string sql = "EXEC Proc_Client_Login @flag='InsertData'";
                 sql = sql + ",@userName='" + username + "'";
                 sql = sql + ",@phone_no='" + phnno + "'";
                 sql = sql + ",@address='" + add + "'";

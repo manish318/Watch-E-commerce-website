@@ -10,4 +10,4 @@ CreatedDate  datetime
 select * from Client
 
 Insert into Client(Username,phone_no,address,Password,CreatedDate)
-Values('@username','@phone_no','@address','@pwd',GETDATE())
+Values('@userName','@phone_no','@address','@pwd',GETDATE())

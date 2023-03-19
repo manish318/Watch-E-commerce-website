@@ -90,7 +90,7 @@
     <form id="form1" runat="server" class="frmalg">
        
         <div class="container">
-                <h3>LogIn Form </h3>
+                <h3>User Login</h3>
             <label for="uname"><b>Username</b></label>
             <asp:TextBox runat="server" ID="uName" placeholder="Enter Username"></asp:TextBox>
             <label for="psw"><b>Password</b></label>

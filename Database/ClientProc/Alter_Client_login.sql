@@ -1,4 +1,4 @@
-AlTER Proc Client_L(
+AlTER Proc Proc_Client_Login(
 @flag           varchar(20),
 @userName       varchar(20)=NULL,
 @phone_no       varchar(20)=Null,
@@ -14,9 +14,6 @@ BEGIN
 RETURN
 END
 
-EXEC Client_L @flag='InsertData'
-
-
 IF @flag='DoLogin'
 BEGIN
 	--success
@@ -29,3 +26,8 @@ BEGIN
 	SELECT '1' as code, 'Login Failed' as msg
 RETURN
 END
+
+EXEC Proc_Client_Login @flag='InsertData' , @userName='Manish',@phone_no='9801234567',@address='BKT',@pwd='Pandey'
+
+Exec Proc_Client_Login @flag='DoLogin' , @userName='Manish', @pwd='Pandey'
+

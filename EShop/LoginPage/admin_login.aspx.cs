@@ -21,7 +21,7 @@ namespace EShop.LoginPage
             var username = uName.Text;
             var password = pwd.Text;
 
-            string sql = "EXEC Proc_Login @flag='DoLogin'";
+            string sql = "EXEC Proc_Admin_Login @flag='DoLogin'";
             sql = sql + ",@user='" + username + "'";
             sql = sql + ",@pwd='" + password + "'";
             DataSet ds = obj.ExecuteDataSet(sql);

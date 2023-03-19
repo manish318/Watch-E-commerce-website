@@ -13,5 +13,10 @@ namespace EShop.Dashboard
         {
 
         }
+
+        protected void cartButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../ClientSide/AddToCart.aspx");
+        }
     }
 }

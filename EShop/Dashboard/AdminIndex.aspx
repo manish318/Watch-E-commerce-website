@@ -4,10 +4,37 @@
    
 <html>
     <head>
-        <title>EShop</title>
+        <title>Watches</title>
         <link href="/ui/css/admin.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
-       <style>
+
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <script src="https://use.fontawesome.com/someUniqueId.js"></script>
+
+</head>
+<body>
+    <form>
+   <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="border-bottom: 2px solid black;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+       <img src="/Image/watch1.png" width="50px" height="50px"/>
+      <span class="ml-3 text-xl"><b>Watches</b></span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <b> <a href="/AdminSide/ManageAdmin.aspx" target="frame" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" class="mr-5 hover:text-gray-900">Admin</a></b>
+        <%-- %><b> <a href="/AdminSide/AddProduct.aspx" target="frame" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" class="mr-5 hover:text-gray-900">Add Product</a></b>--%>
+                <b> <a href="/AdminSide/ManageProduct.aspx" target="frame" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" class="mr-5 hover:text-gray-900">Products</a></b>
+
+        <b> <a href="../AdminSide/ManageCategory.aspx" target="frame" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" class="mr-5 hover:text-gray-900">Categories</a></b>
+        <b><a href="#" target="frame" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"class="mr-5 hover:text-gray-900">Orders</a></b>
+        <b><a href="/LoginPage/admin_login.aspx" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"class="mr-5 hover:text-gray-900">Logout</a></b>        
+    </nav>
+  </div>
+</header>
+
+
+
+       <%-- <style>
            .animate-charcter
             {
            text-transform: uppercase;
@@ -38,8 +65,8 @@
           
                
       <div class="menu text-center">
-          <img src="/Image/img.jpg" width="50px" height="40px"/><br />
-           <h5 class="animate-charcter">E-Furniture</h5> 
+          <img src="/Image/watch1.png" width="65px" height="65px"/><br />
+           <h5 class="animate-charcter">Watch Shop</h5> 
         <div class="menu-wrapper"> 
                
             
@@ -55,7 +82,7 @@
                 
            </ul>
         </div>
-      </div>
+      </div>--%>
       
    <div class="content">
     <iframe width="100%" height="600px" style="border:0px solid;" name="frame"></iframe>
@@ -67,6 +94,6 @@
         </div>
       </div>
 
-       </form>
-</body>
+  </form>
+ </body>
 </html>

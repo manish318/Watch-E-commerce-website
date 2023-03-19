@@ -1,4 +1,4 @@
-CREATE Table Admin_M
+CREATE Table Admin_Master
 (
 rowID		int primary key identity(1,1),
 userName	varchar(50),
@@ -11,7 +11,7 @@ isActive	char(50),
 isDeleted	char(50)
 )
 
-Insert Into Admin_M
+Insert Into Admin_Master
 values('admin','admin','kathmandu','admin','system',getdate(),'Y','N')
 
-select * from Admin_M;
+select * from Admin_Master;

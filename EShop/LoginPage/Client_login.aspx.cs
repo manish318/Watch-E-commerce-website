@@ -22,7 +22,7 @@ namespace EShop.LoginPage
             var username = uName.Text;
             var password = pwd.Text;
 
-            string sql = "EXEC Proc_Client @flag='Login'";
+            string sql = "EXEC Proc_Client_Login @flag='DoLogin'";
             sql = sql + ",@userName='" + username + "'";
             sql = sql + ",@pwd='" + password + "'";
             DataSet ds = obj.ExecuteDataSet(sql);

@@ -67,21 +67,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminSide\AddAdmin.aspx" />
+    <Content Include="AdminSide\AddCategory.aspx" />
+    <Content Include="AdminSide\AddProduct.aspx" />
+    <Content Include="AdminSide\Image\appleWatchUltra.png" />
+    <Content Include="AdminSide\Image\Bugatti.jpg" />
+    <Content Include="AdminSide\Image\cart.png" />
+    <Content Include="AdminSide\Image\Gold Watch.jpg" />
+    <Content Include="AdminSide\Image\rolexwatch.png" />
+    <Content Include="AdminSide\Image\watch1.jpg" />
+    <Content Include="AdminSide\Image\watch1.png" />
     <Content Include="AdminSide\ManageAdmin.aspx" />
+    <Content Include="AdminSide\ManageCategory.aspx" />
     <Content Include="AdminSide\ManageProduct.aspx" />
+    <Content Include="ClientSide\AddToCart.aspx" />
     <Content Include="ClientSide\ViewProcduct.aspx" />
     <Content Include="Dashboard\AdminIndex.aspx" />
     <Content Include="Dashboard\ClientIndex.aspx" />
+    <Content Include="Dashboard\Image\AddToCart.jpg" />
+    <Content Include="Dashboard\Image\appleWatchUltra.png" />
+    <Content Include="Dashboard\Image\Bugatti.jpg" />
+    <Content Include="Dashboard\Image\cart.png" />
+    <Content Include="Dashboard\Image\Gold Watch.jpg" />
+    <Content Include="Dashboard\Image\ImageSKEMI 9193 Gold white.jpg" />
+    <Content Include="Dashboard\Image\rolexwatch.png" />
+    <Content Include="Dashboard\Image\watch1.jpg" />
+    <Content Include="Dashboard\Image\watch1.png" />
     <Content Include="Global.asax" />
-    <Content Include="Image\img.jpg" />
+    <Content Include="Image\appleWatchUltra.png" />
+    <Content Include="Image\Bugatti.jpg" />
+    <Content Include="Image\Gold Watch.jpg" />
     <Content Include="LoginPage\admin_login.aspx" />
     <Content Include="LoginPage\Client_login.aspx" />
     <Content Include="LoginPage\Registration.aspx" />
+    <Content Include="ui\bootstrap\bootstrap.min.js" />
+    <Content Include="ui\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="ui\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="ui\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="ui\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="ui\bootstrap\css\bootstrap.css" />
+    <Content Include="ui\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ui\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="ui\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="ui\bootstrap\js\bootstrap.js" />
+    <Content Include="ui\bootstrap\js\bootstrap.min.js" />
     <Content Include="ui\css\admin.css" />
     <Content Include="ui\css\adminlogin.css" />
+    <Content Include="ui\css\InsertForm.css" />
+    <Content Include="ui\font-awesome\font-awesome.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminSide\AddAdmin.aspx.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\AddAdmin.aspx.designer.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminSide\ManageAdmin.aspx.cs">
       <DependentUpon>ManageAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,12 +146,26 @@
     <Compile Include="AdminSide\ManageAdmin.aspx.designer.cs">
       <DependentUpon>ManageAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminSide\ManageCategory.aspx.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\ManageCategory.aspx.designer.cs">
+      <DependentUpon>ManageCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminSide\ManageProduct.aspx.cs">
       <DependentUpon>ManageProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminSide\ManageProduct.aspx.designer.cs">
       <DependentUpon>ManageProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSide\AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientSide\AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="ClientSide\ViewProcduct.aspx.cs">
       <DependentUpon>ViewProcduct.aspx</DependentUpon>
@@ -146,6 +217,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="ui\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="ui\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="ui\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="ui\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="ui\bootstrap\css\bootstrap.css.map" />
+    <Content Include="ui\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="ui\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="ui\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="ui\bootstrap\js\bootstrap.js.map" />
+    <Content Include="ui\bootstrap\js\bootstrap.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,6 +237,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="ui\Jquery\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,6 +18,9 @@
             border: 3px solid #f1f1f1;
             
         }
+        h2{
+            text-align:center;
+        }
         
 
 
@@ -42,7 +45,7 @@
             width: 49%;
         }
         .lgnbtn {
-            background-color: #4CAF50;
+            background-color: forestgreen;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -90,12 +93,12 @@
     <form id="form1" runat="server" class="frmalg">
        
         <div class="container">
-                <h3>LogIn Form </h3>
+                <h2>Admin Login </h2>
             <label for="uname"><b>Username</b></label>
             <asp:TextBox runat="server" ID="uName" placeholder="Enter Username"></asp:TextBox>
             <label for="psw"><b>Password</b></label>
             <asp:TextBox runat="server" ID="pwd" TextMode="Password" placeholder="Enter Password"></asp:TextBox>
-            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" Text="SigIn" OnClick="btn_Login_Click" />
+            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" Text="Sigin" OnClick="btn_Login_Click" />
         </div>
            
     </form>
